@@ -2,6 +2,7 @@
 
 # User
 package-lock.json
+public/images/
 
 # Created by https://www.toptal.com/developers/gitignore/api/vercel,macos,visualstudiocode,nextjs,react,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=vercel,macos,visualstudiocode,nextjs,react,node

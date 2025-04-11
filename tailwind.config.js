@@ -8,7 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
+        sans: ['var(--font-neue-montreal)', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
+      },
+      colors: {
+        'accent-color': 'var(--accent-color)',
       },
     },
   },
