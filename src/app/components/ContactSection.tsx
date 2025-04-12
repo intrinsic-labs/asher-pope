@@ -27,12 +27,12 @@ export default function ContactSection() {
               <div className="grid gap-4">
                 <div>
                   <p className="text-sm opacity-70">Email</p>
-                  <p className="text-lg">hello@asherpope.com</p>
+                  <p className="text-lg">asher@asherpope.com</p>
                 </div>
                 
                 <div>
                   <p className="text-sm opacity-70">Location</p>
-                  <p className="text-lg">Los Angeles, CA</p>
+                  <p className="text-lg">Charlotte, NC</p>
                 </div>
                 
                 <div className="mt-4">

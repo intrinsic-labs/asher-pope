@@ -13,6 +13,8 @@ export default {
       },
       colors: {
         'accent-color': 'var(--accent-color)',
+        'background-rgb': 'var(--background-rgb)',
+        'foreground-rgb': 'var(--foreground-rgb)',
       },
     },
   },

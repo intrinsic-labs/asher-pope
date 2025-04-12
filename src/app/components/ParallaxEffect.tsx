@@ -19,7 +19,7 @@ export default function ParallaxEffect() {
           const scrollPercentage = scrolledIntoSection / (window.innerHeight + sectionHeight);
           
           // Apply a subtle parallax effect to the background
-          const yPos = scrollPercentage * 200; // 200px of total movement range
+          const yPos = scrollPercentage * 0; // 200px of total movement range
           
           // Apply the transform
           (section as HTMLElement).style.backgroundPosition = `center ${-yPos}px`;

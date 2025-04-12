@@ -2,7 +2,7 @@ export interface VideoItem {
   id: string;
   title: string;
   description: string;
-  technicalInfo: string;
+  technicalInfo?: string;
   videoUrl: string;
   imageUrl: string;
   videoType: 'youtube' | 'vimeo';
@@ -11,29 +11,46 @@ export interface VideoItem {
 export const videoItems: VideoItem[] = [
   {
     id: 'video1',
-    title: 'Project Title One',
-    description: 'A short description about this video project and what it encompasses. This could include information about the concept, the client, or the creative direction.',
-    technicalInfo: 'Shot on RED Digital Cinema | Directed by John Doe | Edited with Adobe Premiere Pro',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    imageUrl: '/images/test01.jpeg',
+    title: 'Cinematic Reel',
+    description: 'The best moments from some of my work over the years, ranging from down & dirty shoots to proper studio sets to 3D animation.',
+    videoUrl: 'https://www.youtube.com/watch?v=5OJGHAop7Dw',
+    imageUrl: '/images/reel.png',
     videoType: 'youtube',
   },
   {
     id: 'video2',
-    title: 'Project Title Two',
-    description: 'Another compelling project with its own unique story and visual language. This description gives context to the viewer about what they\'re about to watch.',
-    technicalInfo: 'Shot on ARRI Alexa | Color graded in DaVinci Resolve | Sound design by Jane Smith',
-    videoUrl: 'https://player.vimeo.com/video/76979871',
-    imageUrl: '/images/test02.jpeg',
-    videoType: 'vimeo',
+    title: 'Divine Aseity',
+    description: 'Created for the Christian Ministry Clearly Reformed, Divine Aseity gives a high-level explanation of what the Bible teaches about God’s self existence.',
+    technicalInfo: '2 Camera shoot with set and lighting, titles in After Effects, 3D animation in Blender, original music.',
+    videoUrl: 'https://www.youtube.com/watch?v=BdLSa-AYJZs',
+    imageUrl: '/images/aseity-1.png',
+    videoType: 'youtube',
   },
   {
     id: 'video3',
-    title: 'Project Title Three',
-    description: 'The third showcase project with its own narrative and creative approach. This could be a commercial, music video, or documentary piece.',
-    technicalInfo: 'Shot on Sony FX6 | 4K resolution | Custom LUTs | Original score by Audio Collective',
-    videoUrl: 'https://www.youtube.com/embed/jNQXAC9IVRw',
-    imageUrl: '/images/test03.jpeg',
+    title: 'Future Crib Live',
+    description: 'Future Crib, a band out of Nashville, TN, released their album “Friends” in 2019. In honor of the release, they performed a show at the High Watt in downown Nashville. This video aims to capture the experience.',
+    technicalInfo: 'Single camera shoot, audio captured with stereo condenser recorder.',
+    videoUrl: 'https://www.youtube.com/watch?v=Y8wxeOQALSU',
+    imageUrl: '/images/future-crib-2.png',
+    videoType: 'youtube',
+  },
+  {
+    id: 'video4',
+    title: 'Exodus Men Promo',
+    description: 'Exodus Church asked for a video to promote their new Men’s Ministry study structure. We shot several testimonials in Charlotte, NC, and got B roll on their retreat in Asheville, NC.',
+    technicalInfo: 'Single camera shoot with lighting, roving B roll shoot outdoors, original music composition.',
+    videoUrl: 'https://www.youtube.com/watch?v=myxPOmO2phs',
+    imageUrl: '/images/exodus.png',
+    videoType: 'youtube',
+  },
+  {
+    id: 'video5',
+    title: 'Divine Infinity',
+    description: 'Another video created for Clearly Reformed, Divine Infinity gives a high-level explanation of what the Bible teaches about God as an infinite being.',
+    technicalInfo: '2 Camera shoot with set and lighting, titles & 2D animation in After Effects, original music direction.',
+    videoUrl: 'https://www.youtube.com/watch?v=xOnueS0135g',
+    imageUrl: '/images/infinity-2.png',
     videoType: 'youtube',
   },
 ]; 
