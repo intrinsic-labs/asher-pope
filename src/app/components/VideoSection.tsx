@@ -1,4 +1,7 @@
+'use client';
+
 import { VideoItem } from "../data/videoData";
+import { useState, useCallback } from "react";
 
 interface VideoSectionProps {
   video: VideoItem;
@@ -6,6 +9,33 @@ interface VideoSectionProps {
 }
 
 export default function VideoSection({ video, isEven }: VideoSectionProps) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  
+  // Function to modify the video URL with parameters
+  const getVideoUrl = useCallback(() => {
+    // Add YouTube parameters to hide controls until playing
+    // modestbranding=1: minimal YouTube branding
+    // showinfo=0: hides video title and uploader info
+    // controls=0: hides controls initially (they appear when playing)
+    // rel=0: prevents related videos from showing
+    
+    let videoUrl = video.videoUrl;
+    const separator = videoUrl.includes('?') ? '&' : '?';
+    
+    // Only show minimal UI before playing
+    if (!isPlaying) {
+      return `${videoUrl}${separator}modestbranding=1&showinfo=0&controls=0&rel=0`;
+    }
+    
+    // When playing, add parameters for standard controls
+    return `${videoUrl}${separator}modestbranding=1&rel=0`;
+  }, [video.videoUrl, isPlaying]);
+  
+  // Handle play event
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
   return (
     <section 
       className="relative min-h-[85vh] w-full flex items-center parallax-section overflow-hidden"
@@ -38,13 +68,14 @@ export default function VideoSection({ video, isEven }: VideoSectionProps) {
           </div>
           
           <div className={`w-full lg:w-1/2 aspect-video ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-            <div className="relative w-full h-0 pb-[56.25%] border border-white">
+            <div className="relative w-full h-0 pb-[56.25%]">
               <iframe 
                 className="absolute top-0 left-0 w-full h-full"
-                src={video.videoUrl} 
+                src={getVideoUrl()} 
                 title={video.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
+                onPlay={handlePlay}
               ></iframe>
             </div>
           </div>

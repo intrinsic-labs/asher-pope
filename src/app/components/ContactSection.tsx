@@ -12,7 +12,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="text-lg md:text-xl mb-8">
-              Interested in collaborating on your next project? I'm always looking for new and exciting opportunities to create impactful visual content.
+              Interested in collaborating on your next project? I'm always looking for new opportunities to create impactful work.
             </p>
 
             <div className="flex flex-row gap-8 justify-between">
@@ -46,7 +46,7 @@ export default function ContactSection() {
               <h3 className="text-2xl font-bold mb-4">Public Personal Data</h3>
               <ul className="grid grid-cols-2 gap-2">
                 <li className="border-t border-background-rgb pt-2">LOCATION</li>
-                <li className="border-t border-background-rgb pt-2">Charlotte, NC</li>
+                <li className="border-t border-background-rgb pt-2">Fort Mill, SC</li>
                 <li className="border-t border-background-rgb pt-2">EMAIL</li>
                 <li className="border-t border-background-rgb pt-2">asher@asherpope.com</li>
                 <li className="border-t border-background-rgb pt-2">SSN</li>

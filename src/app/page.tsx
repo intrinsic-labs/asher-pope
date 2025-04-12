@@ -4,7 +4,6 @@ import VideoSection from "./components/VideoSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import ParallaxEffect from "./components/ParallaxEffect";
-import SmoothScroll from "./components/SmoothScroll";
 import { videoItems } from "./data/videoData";
 
 export default function Home() {
