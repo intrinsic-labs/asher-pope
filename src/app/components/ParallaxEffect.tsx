@@ -8,21 +8,23 @@ export default function ParallaxEffect() {
       const parallaxSections = document.querySelectorAll('.parallax-section');
       
       parallaxSections.forEach((section) => {
-        const distance = window.scrollY;
+        const scrollY = window.scrollY;
         const sectionTop = (section as HTMLElement).offsetTop;
         const sectionHeight = (section as HTMLElement).offsetHeight;
         
-        // Only apply effect when section is in view
-        if (distance > sectionTop - window.innerHeight && distance < sectionTop + sectionHeight) {
-          // Calculate how far scrolled into the section
-          const scrolledIntoSection = distance - sectionTop + window.innerHeight;
-          const scrollPercentage = scrolledIntoSection / (window.innerHeight + sectionHeight);
+        // Only apply effect when section is in view or close to it
+        if (scrollY + window.innerHeight > sectionTop - 300 && 
+            scrollY < sectionTop + sectionHeight + 300) {
           
-          // Apply a subtle parallax effect to the background
-          const yPos = scrollPercentage * 0; // 200px of total movement range
+          // Calculate how far scrolled relative to the section
+          const relativeScroll = scrollY - sectionTop + window.innerHeight;
           
-          // Apply the transform
-          (section as HTMLElement).style.backgroundPosition = `center ${-yPos}px`;
+          // Get the background element within the section
+          const bgElement = section.querySelector('.parallax-background') as HTMLElement;
+          if (bgElement) {
+            // Apply transform for parallax effect
+            bgElement.style.transform = `translateY(${relativeScroll * 0.7}px)`;
+          }
         }
       });
     };

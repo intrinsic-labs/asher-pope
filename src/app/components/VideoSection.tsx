@@ -8,15 +8,23 @@ interface VideoSectionProps {
 export default function VideoSection({ video, isEven }: VideoSectionProps) {
   return (
     <section 
-      className="relative min-h-[85vh] w-full flex items-center parallax-section"
-      style={{
-        backgroundImage: `url(${video.imageUrl})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundBlendMode: 'overlay',
-        backgroundColor: 'rgba(0, 0, 0, 0.6)',
-      }}
+      className="relative min-h-[85vh] w-full flex items-center parallax-section overflow-hidden"
     >
+      {/* Parallax Background */}
+      <div 
+        className="parallax-background absolute inset-0 w-full h-full" 
+        style={{
+          backgroundImage: `url(${video.imageUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay',
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
+          zIndex: -1,
+          height: '120%', // Extra height to allow for movement
+          top: '-90%',    // Offset to center the background
+        }}
+      ></div>
+      
       <div className="section-overlay">
         <div className="container mx-auto px-6 py-24 flex flex-col lg:flex-row items-center gap-12">
           <div className={`w-full lg:w-1/2 text-white ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>

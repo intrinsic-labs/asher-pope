@@ -50,15 +50,15 @@ body {
 }
 
 .parallax-section {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* transition: all 1s ease; */
+  position: relative;
+  z-index: 1;
+}
+
+.parallax-background {
+  will-change: transform;
 }
 
 .section-overlay {
-  /* background: rgba(0, 0, 0, 0.6); */
   width: 100%;
   height: 80%;
 }
@@ -79,9 +79,5 @@ body {
   
   .medium-title {
     font-size: clamp(2.5rem, 4vw, 3rem);
-  }
-
-  .parallax-section {
-    background-attachment: scroll;
   }
 }
