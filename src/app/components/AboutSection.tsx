@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
           <div>
             <p className="text-lg md:text-xl mb-8">
-              I'm a filmmaker and video producer with over a decade of experience creating compelling visual narratives. 
+              I&apos;m a filmmaker and video producer with over a decade of experience creating compelling visual narratives. 
               With a background in cinematography, animation, and digital storytelling, I bring a unique perspective to each project.
             </p>
             
@@ -22,7 +22,7 @@ export default function AboutSection() {
           <div>
             <p className="text-lg md:text-xl mb-8">
               I approach each project with meticulous attention to detail and a passion for creating 
-              best-in-class visual experiences. You're gonna love what you see.
+              best-in-class visual experiences. You&apos;re gonna love what you see.
             </p>
             
             <div className="mt-12">

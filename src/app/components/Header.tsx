@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-10 bg-white text-foreground-rgb border-b border-black">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <h1 className="text-2xl font-bold tracking-tight">
-          <a href="/" className="small-title hover:text-accent-color transition-colors">ASHER POPE</a>
+          <Link href="/" className="small-title hover:text-accent-color transition-colors">ASHER POPE</Link>
         </h1>
         
         {/* Desktop Navigation */}

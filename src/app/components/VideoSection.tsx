@@ -19,7 +19,7 @@ export default function VideoSection({ video, isEven }: VideoSectionProps) {
     // controls=0: hides controls initially (they appear when playing)
     // rel=0: prevents related videos from showing
     
-    let videoUrl = video.videoUrl;
+    const videoUrl = video.videoUrl;
     const separator = videoUrl.includes('?') ? '&' : '?';
     
     // Only show minimal UI before playing

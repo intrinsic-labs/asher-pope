@@ -1,5 +1,6 @@
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 export default function ContactSection() {
   return (
@@ -8,11 +9,11 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32">
           <div>
             <h2 className="huge-title mb-12">
-              LET'S <span className="text-[var(--accent-color)]">WORK</span> TOGETHER
+              LET&apos;S <span className="text-[var(--accent-color)]">WORK</span> TOGETHER
             </h2>
 
             <p className="text-lg md:text-xl mb-8">
-              Interested in collaborating on your next project? I'm always looking for new opportunities to create impactful work.
+              Interested in collaborating on your next project? I&apos;m always looking for new opportunities to create impactful work.
             </p>
 
             <div className="flex flex-row gap-8 justify-between">
@@ -25,13 +26,13 @@ export default function ContactSection() {
 
               <div>
                 <div className="flex gap-4 mt-2">
-                  <a href="https://www.instagram.com/rocketbro.py/" aria-label="Instagram" className="hover:text-accent-color text-2xl">
+                  <a href="https://www.instagram.com/rocketbro.py/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-accent-color text-2xl">
                     <FaInstagram />
                   </a>
-                  <a href="https://x.com/var_rocketbro" aria-label="Twitter X" className="hover:text-accent-color text-2xl">
+                  <a href="https://x.com/var_rocketbro" target="_blank" rel="noopener noreferrer" aria-label="Twitter X" className="hover:text-accent-color text-2xl">
                     <FaXTwitter />
                   </a>
-                  <a href="https://www.youtube.com/@rocketbro.h" aria-label="YouTube" className="hover:text-accent-color text-2xl">
+                  <a href="https://www.youtube.com/@rocketbro.h" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-accent-color text-2xl">
                     <FaYoutube />
                   </a>
                 </div>
@@ -39,7 +40,13 @@ export default function ContactSection() {
             </div>
 
             <div className="lg:hidden mt-12">
-              <img src="/images/asher-pope.jpg" alt="Contact Image" className="w-full h-full object-cover" />
+              <Image 
+                src="/images/asher-pope.jpg" 
+                alt="Contact Image" 
+                width={600} 
+                height={400} 
+                className="w-full h-full object-cover" 
+              />
             </div>
 
             <div className="mt-12">
@@ -56,7 +63,13 @@ export default function ContactSection() {
           </div>
 
           <div className="hidden lg:flex lg:flex-col lg:justify-center">
-            <img src="/images/asher-pope.jpg" alt="Contact Image" className="w-full h-full object-cover" />
+            <Image 
+              src="/images/asher-pope.jpg" 
+              alt="Contact Image" 
+              width={800} 
+              height={600} 
+              className="w-full h-full object-cover" 
+            />
           </div>
 
         </div>
