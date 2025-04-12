@@ -1,3 +1,6 @@
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+
 export default function ContactSection() {
   return (
     <section id="contact" className="bg-black text-white py-24 lg:py-32">
@@ -7,45 +10,55 @@ export default function ContactSection() {
             <h2 className="huge-title mb-12">
               LET'S <span className="text-[var(--accent-color)]">WORK</span> TOGETHER
             </h2>
-            
+
             <p className="text-lg md:text-xl mb-8">
               Interested in collaborating on your next project? I'm always looking for new and exciting opportunities to create impactful visual content.
             </p>
-            
-            <a 
-              href="mailto:your.email@example.com" 
-              className="btn border-white hover:bg-white hover:text-black inline-block"
-            >
-              Get In Touch
-            </a>
-          </div>
-          
-          <div className="flex flex-col justify-center">
-            <div className="bg-white/5 p-8 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-6">Contact Details</h3>
-              
-              <div className="grid gap-4">
-                <div>
-                  <p className="text-sm opacity-70">Email</p>
-                  <p className="text-lg">asher@asherpope.com</p>
-                </div>
-                
-                <div>
-                  <p className="text-sm opacity-70">Location</p>
-                  <p className="text-lg">Charlotte, NC</p>
-                </div>
-                
-                <div className="mt-4">
-                  <p className="text-sm opacity-70">Social</p>
-                  <div className="flex gap-4 mt-2">
-                    <a href="#" className="hover:text-[var(--accent-color)]">Instagram</a>
-                    <a href="#" className="hover:text-[var(--accent-color)]">Vimeo</a>
-                    <a href="#" className="hover:text-[var(--accent-color)]">LinkedIn</a>
-                  </div>
+
+            <div className="flex flex-row gap-8 justify-between">
+              <a
+                href="mailto:asher@asherpope.com"
+                className="btn border-white hover:bg-white hover:text-black inline-block"
+              >
+                Get In Touch
+              </a>
+
+              <div>
+                <div className="flex gap-4 mt-2">
+                  <a href="https://www.instagram.com/rocketbro.py/" aria-label="Instagram" className="hover:text-accent-color text-2xl">
+                    <FaInstagram />
+                  </a>
+                  <a href="https://x.com/var_rocketbro" aria-label="Twitter X" className="hover:text-accent-color text-2xl">
+                    <FaXTwitter />
+                  </a>
+                  <a href="https://www.youtube.com/@rocketbro.h" aria-label="YouTube" className="hover:text-accent-color text-2xl">
+                    <FaYoutube />
+                  </a>
                 </div>
               </div>
             </div>
+
+            <div className="lg:hidden mt-12">
+              <img src="/images/asher-pope.jpg" alt="Contact Image" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="mt-12">
+              <h3 className="text-2xl font-bold mb-4">Public Personal Data</h3>
+              <ul className="grid grid-cols-2 gap-2">
+                <li className="border-t border-background-rgb pt-2">LOCATION</li>
+                <li className="border-t border-background-rgb pt-2">Charlotte, NC</li>
+                <li className="border-t border-background-rgb pt-2">EMAIL</li>
+                <li className="border-t border-background-rgb pt-2">asher@asherpope.com</li>
+                <li className="border-t border-background-rgb pt-2">SSN</li>
+                <li className="border-t border-background-rgb pt-2">psych lol yeah right</li>
+              </ul>
+            </div>
           </div>
+
+          <div className="hidden lg:flex lg:flex-col lg:justify-center">
+            <img src="/images/asher-pope.jpg" alt="Contact Image" className="w-full h-full object-cover" />
+          </div>
+
         </div>
       </div>
     </section>

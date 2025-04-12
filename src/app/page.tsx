@@ -34,8 +34,9 @@ export default function Home() {
         <div className="container mx-auto px-6 flex justify-between items-center text-sm">
           <p>© {new Date().getFullYear()} Asher Pope. All rights reserved.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-[var(--accent-color)]">Privacy</a>
-            <a href="#" className="hover:text-[var(--accent-color)]">Terms</a>
+            <p>Website made with ❤️ by <a href="https://www.intrinsiclabs.co" className="hover:text-[var(--accent-color)]">Intrinsic Labs LLC</a></p>
+            {/* <a href="#" className="hover:text-[var(--accent-color)]">Privacy</a>
+            <a href="#" className="hover:text-[var(--accent-color)]">Terms</a> */}
           </div>
         </div>
       </footer>
