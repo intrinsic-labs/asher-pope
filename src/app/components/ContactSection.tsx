@@ -13,7 +13,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="text-lg md:text-xl mb-8">
-              Interested in collaborating on your next project? I&apos;m always looking for new opportunities to create things that matter.
+              Interested in collaborating on your next project? I&apos;m always looking for opportunities to work on things that matter. Reach out!
             </p>
 
             <div className="flex flex-row gap-8 justify-between">
@@ -57,7 +57,7 @@ export default function ContactSection() {
                 <li className="border-t border-background-rgb pt-2">EMAIL</li>
                 <li className="border-t border-background-rgb pt-2">asher@asherpope.com</li>
                 <li className="border-t border-background-rgb pt-2">SSN</li>
-                <li className="border-t border-background-rgb pt-2">psych lol yeah right</li>
+                <li className="border-t border-background-rgb pt-2">lol yeah right</li>
               </ul>
             </div>
           </div>
