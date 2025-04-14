@@ -48,7 +48,7 @@ export const videoItems: VideoItem[] = [
     id: 'video5',
     title: 'Exodus Men Promo',
     description: 'Exodus Church asked for a video to promote their new Men’s Ministry study structure. We shot several testimonials in Charlotte, NC, and got B roll on their retreat in Asheville, NC.',
-    technicalInfo: 'Single camera shoot with lighting, roving B roll shoot outdoors, original music composition.',
+    technicalInfo: 'Single camera shoot with lighting, roving B roll shoot outdoors, original music composition and performance.',
     videoUrl: 'https://www.youtube.com/embed/myxPOmO2phs?si=3H6xni4Gi0EdYigL',
     imageUrl: '/images/exodus.png',
     videoType: 'youtube',
