@@ -22,7 +22,7 @@ export const videoItems: VideoItem[] = [
     title: 'Divine Aseity',
     description: 'Created for the Christian Ministry Clearly Reformed, Divine Aseity gives a high-level explanation of what the Bible teaches about God’s self existence.',
     technicalInfo: '2 Camera shoot with set and lighting, titles in After Effects, 3D animation in Blender, original music.',
-    videoUrl: 'https://www.youtube.com/embed/BdLSa-AYJZs?si=CGvaWe3EOxENIuPf',
+    videoUrl: 'https://www.youtube-nocookie.com/embed/BdLSa-AYJZs?si=IkQOSn8crQApnw4m',
     imageUrl: '/images/aseity-1.png',
     videoType: 'youtube',
   },
