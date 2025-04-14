@@ -7,7 +7,7 @@ export default function HeroSection() {
             YOUR <span className="text-[var(--accent-color)]">VISION</span> CRAFTED WITH PRECISION
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mb-8">
-            <b>Excellence in every frame.</b> Filmmaking that moves audiences with exceptional directing, producing, animating, editing, and more.
+            <b>Excellence in every frame.</b> Filmmaking that moves audiences with exceptional storytelling, visual craftsmanship, and super happy clients.
           </p>
           <a href="#work" className="btn border-black bg-white hover:bg-black hover:text-white">
             View Work

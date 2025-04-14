@@ -24,7 +24,7 @@ export default function VideoSection({ video, isEven }: VideoSectionProps) {
     
     // Only show minimal UI before playing
     if (!isPlaying) {
-      return `${videoUrl}${separator}modestbranding=1&showinfo=0&controls=0&rel=0`;
+      return `${videoUrl}${separator}modestbranding=1&rel=0`;
     }
     
     // When playing, add parameters for standard controls

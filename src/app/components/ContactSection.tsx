@@ -13,7 +13,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="text-lg md:text-xl mb-8">
-              Interested in collaborating on your next project? I&apos;m always looking for new opportunities to create impactful work.
+              Interested in collaborating on your next project? I&apos;m always looking for new opportunities to create things that matter.
             </p>
 
             <div className="flex flex-row gap-8 justify-between">
