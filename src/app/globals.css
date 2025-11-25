@@ -6,6 +6,7 @@
   --foreground-rgb: rgb(24, 24, 24);
   --background-rgb: rgb(245, 241, 236);
   --accent-color: #eb693a;
+  --software-accent: #7955ee;
 }
 
 * {

@@ -1,34 +1,30 @@
-import Header from "./components/Header";
-import VideoHeroSection from "./components/VideoHeroSection";
-import VideoSection from "./components/VideoSection";
-import AboutSection from "./components/AboutSection";
-import ContactSection from "./components/ContactSection";
-import ParallaxEffect from "./components/ParallaxEffect";
-import { videoItems } from "./data/videoData";
+import Header from "../components/Header";
+import SoftwareHeroSection from "../components/SoftwareHeroSection";
+import SoftwareSection from "../components/SoftwareSection";
+import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
+import ParallaxEffect from "../components/ParallaxEffect";
+import { softwareItems } from "../data/softwareData";
 
-export default function Home() {
+export default function SoftwarePage() {
   return (
     <div className="min-h-screen">
       <Header />
       <ParallaxEffect />
-      
       <main>
-        <VideoHeroSection />
-        
-        <div id="video">
-          {videoItems.map((video, index) => (
-            <VideoSection 
-              key={video.id} 
-              video={video} 
+        <SoftwareHeroSection />
+        <div id="software">
+          {softwareItems.map((software, index) => (
+            <SoftwareSection 
+              key={software.id} 
+              software={software} 
               isEven={index % 2 === 0} 
             />
           ))}
         </div>
-        
-        <AboutSection />
-        <ContactSection />
+        <AboutSection accentColor="software-accent" />
+        <ContactSection accentColor="software-accent" />
       </main>
-      
       <footer className="bg-white text-black py-6">
         <div className="container mx-auto px-6 flex justify-between items-center text-sm">
           <p>© {new Date().getFullYear()} Asher Pope. All rights reserved.</p>
@@ -41,4 +37,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+} 

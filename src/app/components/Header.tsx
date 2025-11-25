@@ -23,7 +23,10 @@ export default function Header() {
         <nav className="hidden md:block">
           <ul className="flex gap-6">
             <li>
-              <a href="#work" className="hover:text-[var(--accent-color)] transition-colors font-bold">WORK</a>
+              <a href="/" className="hover:text-[var(--accent-color)] transition-colors font-bold">VIDEO</a>
+            </li>
+            <li>
+              <a href="/software" className="hover:text-[var(--accent-color)] transition-colors font-bold">SOFTWARE</a>
             </li>
             <li>
               <a href="#about" className="hover:text-[var(--accent-color)] transition-colors font-bold">ABOUT</a>
@@ -52,11 +55,20 @@ export default function Header() {
               <ul className="flex flex-col gap-8 items-center">
                 <li className="w-full text-center py-4">
                   <a 
-                    href="#work" 
+                    href="/" 
                     className="text-6xl font-bold text-background-rgb hover:text-accent-color transition-colors"
                     onClick={toggleMenu}
                   >
-                    WORK
+                    VIDEO
+                  </a>
+                </li>
+                <li className="w-full text-center py-4">
+                  <a 
+                    href="/software" 
+                    className="text-6xl font-bold text-background-rgb hover:text-accent-color transition-colors"
+                    onClick={toggleMenu}
+                  >
+                    SOFTWARE
                   </a>
                 </li>
                 <li className="w-full text-center py-4">

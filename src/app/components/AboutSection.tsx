@@ -1,9 +1,13 @@
-export default function AboutSection() {
+interface AboutSectionProps {
+  accentColor?: string;
+}
+
+export default function AboutSection({ accentColor = 'accent-color' }: AboutSectionProps) {
   return (
     <section id="about" className="bg-background-rgb text-foreground-rgb py-24 md:py-32">
       <div className="container mx-auto px-6 md:px-12">
         <h2 className="huge-title mb-16">
-          ABOUT <span className="text-[var(--accent-color)]">ME</span>
+          ABOUT <span className={`text-${accentColor}`}>ME</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">

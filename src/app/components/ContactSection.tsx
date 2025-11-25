@@ -2,14 +2,18 @@ import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 
-export default function ContactSection() {
+interface ContactSectionProps {
+  accentColor?: string;
+}
+
+export default function ContactSection({ accentColor = 'accent-color' }: ContactSectionProps) {
   return (
     <section id="contact" className="bg-black text-white py-24 lg:py-32">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32">
           <div>
             <h2 className="huge-title mb-12">
-              LET&apos;S <span className="text-[var(--accent-color)]">WORK</span> TOGETHER
+              LET&apos;S <span className={`text-${accentColor}`}>WORK</span> TOGETHER
             </h2>
 
             <p className="text-lg md:text-xl mb-8">
@@ -26,13 +30,13 @@ export default function ContactSection() {
 
               <div>
                 <div className="flex gap-4 mt-2">
-                  <a href="https://www.instagram.com/rocketbro.py/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-accent-color text-2xl">
+                  <a href="https://www.instagram.com/rocketbro.py/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={`hover:text-${accentColor} text-2xl`}>
                     <FaInstagram />
                   </a>
-                  <a href="https://x.com/var_rocketbro" target="_blank" rel="noopener noreferrer" aria-label="Twitter X" className="hover:text-accent-color text-2xl">
+                  <a href="https://x.com/var_rocketbro" target="_blank" rel="noopener noreferrer" aria-label="Twitter X" className={`hover:text-${accentColor} text-2xl`}>
                     <FaXTwitter />
                   </a>
-                  <a href="https://www.youtube.com/@rocketbro.h" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-accent-color text-2xl">
+                  <a href="https://www.youtube.com/@rocketbro.h" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className={`hover:text-${accentColor} text-2xl`}>
                     <FaYoutube />
                   </a>
                 </div>

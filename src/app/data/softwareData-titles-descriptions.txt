@@ -1,0 +1,70 @@
+Latent Spaces
+THE PROBLEM
+Current AI interfaces hide the vast possibilities behind each prompt, forcing users to repeatedly refine queries to discover alternative perspectives—wasting time and concealing the model's true nature.
+
+THE SOLUTION
+Using the Latent Spaces Loom interface, users can generate, visualize, and branch multiple AI responses simultaneously, revealing the hidden multiverse of possible continuations. This approach delivers measurable advantages:
+
+• Increases productivity by 10x through parallel exploration of multiple response paths
+• Provides unprecedented insights into model behavior that improve prompt engineering skills
+• Builds intuition for AI reasoning patterns through visual representation of branching possibilities
+
+---
+Global Missions Kiosk
+THE PROBLEM
+Many large churches support dozens of missionaries around the world, but it is often difficult for congregants to see the impact of their support in tangible ways or stay up to date on the work being done.
+
+THE SOLUTION
+Churches can use Global Missions Kiosk to display an interactive visual map of their missionaries and the work they are doing, along with up-to-date information about individual needs and prayer requests.
+
+• Puts faces to the names of supported workers, building connections between congregation and missionaries
+• Self-sustaining, client-managed backend with zero maintenance required
+• Deployable on any Android device, including tablets, kiosks, or networked PCs
+
+---
+Blackthorn Geomatics
+THE PROBLEM
+Blackthorn Geomatics needed an effective, clear, and professional website to showcase their work and services.
+
+THE SOLUTION
+Built using modern web technologies, the resulting site features a shot-on-site hero video, clear presentation of services and case studies, and a dedicated Capabilities page to help prospects understand the full range of services offered.
+
+• 
+• 
+• 
+
+---
+Clearly Reformed
+THE PROBLEM
+Clearly Reformed has a responsive website, but wanted to deliver a more tailored experience for their audience on the go, enabling easy consumption of articles, podcasts, and videos.
+
+THE SOLUTION
+I developed a native mobile app for iOS and Android that dynamically pulls from Clearly Reformed's API. The app features a clean, modern design and a seamless user experience, with features such as offline caching, bookmarks and notes, and a dedicated podcast player.
+
+• 
+• 
+• 
+
+---
+Record Machine
+THE PROBLEM
+Musicians have a lot to keep track of when preparing for a release - various mixes and masters, lyrics, voice memos, artwork, and more. These pieces of the puzzle are often scattered across various platforms and devices, making it difficult and time-consuming to stay productive.
+
+THE SOLUTION
+Record Machine is an iOS app that streamlines the process of organizing and previewing a release. It allows users to keep track of everything in one place, and features a built-in music player that mimics popular streaming platforms.
+
+• 
+• 
+• 
+
+---
+Check Right In
+THE PROBLEM
+A local church's New Members class needed a better way to track attendance than paper records, with class sizes of 80+ people. Accurate tracking was critical since members needed to attend a minimum number of sessions to join the church.
+
+THE SOLUTION
+I created Check Right In, an app for checking large numbers of class members in via a network of tablets at the entrance. This streamlined solution saved a lot of time, reduced headaches, and created a sustainable way to manage and track attendance.
+
+• 
+• 
+• 
